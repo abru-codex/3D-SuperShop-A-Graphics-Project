@@ -4,59 +4,6 @@
 #include "animation.h"
 #include "products.h"
 
-void table()
-{
-    // Top
-    glPushMatrix();
-    glEnable(GL_TEXTURE_2D);
-    glBindTexture(GL_TEXTURE_2D,1);
-    //glRotatef(0, 1 , 0, 0);
-    glScalef(5.0, 0.1, 4.0);
-    //cubeColor(0.3, 0.2, 0.5, 0.3, 0.2, 0.5,60);
-    drawCube(0.8, 0.9, 0.9,0.6, 0.6, 0.4);
-    glPopMatrix();
-    glDisable(GL_TEXTURE_2D);
-
-    //leg-front-right
-    glPushMatrix();
-    glEnable(GL_TEXTURE_2D);
-    glBindTexture(GL_TEXTURE_2D,2);
-    glTranslatef(0.5,-2.5, 0.5);
-    glScalef(0.2, 2.5, 0.2);
-    //cubeColor(0.3, 0.2, 0.5, 0.3, 0.2, 0.5,60);
-    drawCube(0.8, 0.9, 0.9,0.6, 0.6, 0.4);
-    glPopMatrix();
-    glDisable(GL_TEXTURE_2D);
-
-    //leg-front-left
-    glPushMatrix();
-    glTranslatef(4,-2.5, 0.5);
-    glScalef(0.2, 2.5, 0.2);
-    //cubeColor(0.3, 0.2, 0.5, 0.3, 0.2, 0.5,60);
-    drawCube(0.8, 0.9, 0.9,0.6, 0.6, 0.4);
-    glPopMatrix();
-
-    //leg-back right
-    glPushMatrix();
-    glTranslatef(0.5,-2.5, 3.5);
-    glScalef(0.2, 2.5, 0.2);
-    //cubeColor(0.3, 0.2, 0.5, 0.3, 0.2, 0.5,60);
-    drawCube(0.8, 0.9, 0.9,0.6, 0.6, 0.4);
-    glPopMatrix();
-
-    //leg
-    glPushMatrix();
-    glTranslatef(4,-2.5, 3.5);
-    glScalef(0.2, 2.5, 0.2);
-    //cubeColor(0.3, 0.2, 0.5, 0.3, 0.2, 0.5,60);
-    drawCube(0.8, 0.9, 0.9,0.6, 0.6, 0.4);
-    glPopMatrix();
-
-}
-
-
-
-
 void mirror(){
 
     //00
