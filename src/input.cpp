@@ -58,6 +58,7 @@ void myKeyboardFunc( unsigned char key, int x, int y )
 
     case '8':
         light1();
+        break;
     case 'w': // move eye point upwards along Y axis
         eyeY+=1.0;
         break;
