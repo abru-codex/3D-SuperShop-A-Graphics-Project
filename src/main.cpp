@@ -8,17 +8,12 @@
 #include "BmpLoader.h"
 #include "geometry.h"
 #include "lighting.h"
+#include "camera.h"
 
 double Txval=0,Tyval=0,Tzval=0;
 
-////default
-double eyeX=40, eyeY=10, eyeZ=150, refX = 55, refY=10,refZ=0;
-
 int sky_texture=29;
-//elevator
-//double eyeX=40, eyeY=40, eyeZ=40, refX = 0, refY=30,refZ=0;
 
-double windowHeight=1080, windowWidth=1080;
 GLfloat alpha = 0.0, theta = 0.0, axis_x=0.0, axis_y=0.0;
 GLboolean liftUp = false, liftDown = true;
 unsigned int ID;
