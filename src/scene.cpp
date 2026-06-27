@@ -9,6 +9,7 @@
 #include "products.h"
 #include "freezers.h"
 #include "environment.h"
+#include "parking.h"
 
 void display1st(){
 
@@ -79,6 +80,12 @@ void display1st(){
     glPushMatrix();
     glTranslatef(60, 0, 0);
     petrol_pump();
+    glPopMatrix();
+
+    // car parking — west of petrol pumps, north of building
+    glPushMatrix();
+    glTranslatef(-90, 0, 115);
+    parking_lot();
     glPopMatrix();
 
     glPushMatrix();
