@@ -199,7 +199,7 @@ void display(void)
     glLoadIdentity();
     gluLookAt(eyeX,eyeY,eyeZ,refX,refY,refZ,0,1,0);;
 
-    glViewport(0, 0, 1900, 1000);
+    glViewport(0, 0, 1920, 1080);
 
     glPushMatrix();
     glScalef(0.7, 1.1, 1);
