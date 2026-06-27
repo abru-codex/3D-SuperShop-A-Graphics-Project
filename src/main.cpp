@@ -9,14 +9,12 @@
 #include "geometry.h"
 #include "lighting.h"
 #include "camera.h"
+#include "textures.h"
 
 double Txval=0,Tyval=0,Tzval=0;
 
-int sky_texture=29;
-
 GLfloat alpha = 0.0, theta = 0.0, axis_x=0.0, axis_y=0.0;
 GLboolean liftUp = false, liftDown = true;
-unsigned int ID;
 
 double door_anglex=0,door_angley=180, left_door_x=38, right_door_x1=62.7, elevator_door=0, elevator_floor=0, lift_y=0;
 
@@ -1842,19 +1840,6 @@ void animate()
 
     glutPostRedisplay();
 
-}
-
-void LoadTexture(const char*filename)
-{
-    glGenTextures(1, &ID);
-    glBindTexture(GL_TEXTURE_2D, ID);
-    glPixelStorei(GL_UNPACK_ALIGNMENT, ID);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
-    BmpLoader bl(filename);
-    gluBuild2DMipmaps(GL_TEXTURE_2D, GL_RGB, bl.iWidth, bl.iHeight, GL_RGB, GL_UNSIGNED_BYTE, bl.textureData );
 }
 
 static void idle(void)
