@@ -31,14 +31,6 @@ void myKeyboardFunc( unsigned char key, int x, int y )
     case '1':
         eyeX=17, eyeY=20, eyeZ=90, refX = 110, refY=30,refZ=0;
         break;
-    case '2':
-        //glDisable(GL_LIGHTING);
-        light0();
-        break;
-    case '3':
-        //glDisable(GL_LIGHTING);
-        light2();
-        break;
     case '4':
         eyeX=40, eyeY=10, eyeZ=150, refX = 55, refY=10,refZ=0;
         break;
@@ -65,9 +57,6 @@ void myKeyboardFunc( unsigned char key, int x, int y )
         glPopMatrix();
         break;
 
-    case '8':
-        light1();
-        break;
     case 'w': // move eye point upwards along Y axis
         eyeY+=1.0;
         break;
