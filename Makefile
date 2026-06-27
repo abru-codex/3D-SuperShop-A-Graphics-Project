@@ -1,10 +1,10 @@
 CXX      := g++
-CXXFLAGS := -std=c++17 -Wall -Wno-unused-parameter -Wno-write-strings \
+CXXFLAGS := -std=c++17 -Isrc -Wall -Wno-unused-parameter -Wno-write-strings \
             -Wno-narrowing -Wno-sign-compare -Wno-unused-variable \
             -Wno-unused-but-set-variable -O2
 LDLIBS   := -lglut -lGLU -lGL -lm
 
-SRC := $(wildcard *.cpp)
+SRC := $(wildcard src/*.cpp)
 OBJ := $(SRC:.cpp=.o)
 BIN := supershop
 
