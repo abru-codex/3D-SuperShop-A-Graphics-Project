@@ -57,8 +57,6 @@ int main (int argc, char **argv)
 
     glShadeModel(GL_SMOOTH);
     glEnable(GL_DEPTH_TEST);
-    glutKeyboardFunc(myKeyboardFunc);
-    glutDisplayFunc(display);
     glEnable(GL_NORMALIZE);
     glEnable(GL_LIGHTING);
 
