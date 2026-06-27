@@ -4,6 +4,5 @@
 void elevator();
 void drawPizza();
 void sky();
-void round_sky();
 
 #endif

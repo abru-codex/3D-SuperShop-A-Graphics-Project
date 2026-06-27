@@ -212,13 +212,6 @@ void display(void)
     display2nd();
     glPopMatrix();
 
-//    glPushMatrix();
-//    glTranslatef(-10, 0, -40);
-//    glScalef(10, 10, 1);
-//    round_sky();
-//    glPopMatrix();
-
-
     glPushMatrix();
     glTranslatef(-400, 0, -400);
     glScalef(80, 80, 0.1);
