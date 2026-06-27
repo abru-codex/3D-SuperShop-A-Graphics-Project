@@ -3,9 +3,8 @@
 
 #include <GL/gl.h>
 
-extern double door_anglex, door_angley;
-extern double left_door_x, right_door_x1;
-extern double elevator_door, elevator_floor, lift_y;
+extern double door_anglex;
+extern double elevator_door, lift_y;
 
 extern bool doorOpen, doorClose;
 extern GLboolean liftUp, liftDown;

@@ -1,9 +1,8 @@
 #include "animation.h"
 #include <GL/glut.h>
 
-double door_anglex=0, door_angley=180;
-double left_door_x=38, right_door_x1=62.7;
-double elevator_door=0, elevator_floor=0, lift_y=0;
+double door_anglex=0;
+double elevator_door=0, lift_y=0;
 
 bool doorOpen=false, doorClose=true;
 GLboolean liftUp = false, liftDown = true;
