@@ -1,13 +1,11 @@
-#include<GL/gl.h>
+#include <GL/gl.h>
 #include <GL/glu.h>
 #include <GL/glut.h>
-#include <stdlib.h>
-#include <stdio.h>
-#include <windows.h>
-#include<math.h>
-#include "BmpLoader.h"
-#include "BmpLoader.h"
+#include <cstdlib>
+#include <cstdio>
+#include <cstring>
 #include <cmath>
+#include "BmpLoader.h"
 
 double Txval=0,Tyval=0,Tzval=0;
 
@@ -2039,65 +2037,65 @@ int main (int argc, char **argv)
 
 
     //ceil
-    LoadTexture("C:\\Users\\User\\Desktop\\CGIPL\\supershop\\bmp\\ceil.bmp");
+    LoadTexture("bmp/ceil.bmp");
     //wall
-    LoadTexture("C:\\Users\\User\\Desktop\\CGIPL\\supershop\\bmp\\wall.bmp");
+    LoadTexture("bmp/wall.bmp");
     //floor
-    LoadTexture("C:\\Users\\User\\Desktop\\CGIPL\\supershop\\bmp\\floor.bmp");
+    LoadTexture("bmp/floor.bmp");
     //swapno logo
-    LoadTexture("C:\\Users\\User\\Desktop\\CGIPL\\supershop\\bmp\\swapno.bmp");
+    LoadTexture("bmp/swapno.bmp");
     //grass
-    LoadTexture("C:\\Users\\User\\Desktop\\CGIPL\\supershop\\bmp\\grass.bmp");
+    LoadTexture("bmp/grass.bmp");
     //window mirror 6
-    LoadTexture("C:\\Users\\User\\Desktop\\CGIPL\\supershop\\bmp\\window.bmp");
+    LoadTexture("bmp/window.bmp");
     //red stripe for shelf 7
-    LoadTexture("C:\\Users\\User\\Desktop\\CGIPL\\supershop\\bmp\\redstripe.bmp");
+    LoadTexture("bmp/redstripe.bmp");
     //sale box 8
-    LoadTexture("C:\\Users\\User\\Desktop\\CGIPL\\supershop\\bmp\\sale.bmp");
+    LoadTexture("bmp/sale.bmp");
     //road 9
-    LoadTexture("C:\\Users\\User\\Desktop\\CGIPL\\supershop\\bmp\\road.bmp");
+    LoadTexture("bmp/road.bmp");
     //concrete brick 10
-    LoadTexture("C:\\Users\\User\\Desktop\\CGIPL\\supershop\\bmp\\brick.bmp");
+    LoadTexture("bmp/brick.bmp");
     //concrete brick 11
-    LoadTexture("C:\\Users\\User\\Desktop\\CGIPL\\supershop\\bmp\\fence.bmp");
+    LoadTexture("bmp/fence.bmp");
     //pretrol pump lower 12
-    LoadTexture("C:\\Users\\User\\Desktop\\CGIPL\\supershop\\bmp\\fuelpumplower.bmp");
+    LoadTexture("bmp/fuelpumplower.bmp");
     //pretrol pump upper 13
-    LoadTexture("C:\\Users\\User\\Desktop\\CGIPL\\supershop\\bmp\\fuelpumpupper.bmp");
+    LoadTexture("bmp/fuelpumpupper.bmp");
     //black 14
-    LoadTexture("C:\\Users\\User\\Desktop\\CGIPL\\supershop\\bmp\\black.bmp");
+    LoadTexture("bmp/black.bmp");
     //wood 15
-    LoadTexture("C:\\Users\\User\\Desktop\\CGIPL\\supershop\\bmp\\wood.bmp");
+    LoadTexture("bmp/wood.bmp");
     //wood 16
-    LoadTexture("C:\\Users\\User\\Desktop\\CGIPL\\supershop\\bmp\\noodles.bmp");
+    LoadTexture("bmp/noodles.bmp");
     //wood 17
-    LoadTexture("C:\\Users\\User\\Desktop\\CGIPL\\supershop\\bmp\\kitten.bmp");
+    LoadTexture("bmp/kitten.bmp");
     //wood 18
-    LoadTexture("C:\\Users\\User\\Desktop\\CGIPL\\supershop\\bmp\\chef.bmp");
+    LoadTexture("bmp/chef.bmp");
     //wood 19
-    LoadTexture("C:\\Users\\User\\Desktop\\CGIPL\\supershop\\bmp\\oat.bmp");
+    LoadTexture("bmp/oat.bmp");
     //wood 20
-    LoadTexture("C:\\Users\\User\\Desktop\\CGIPL\\supershop\\bmp\\chilli.bmp");
+    LoadTexture("bmp/chilli.bmp");
     //wood 21
-    LoadTexture("C:\\Users\\User\\Desktop\\CGIPL\\supershop\\bmp\\choco1.bmp");
+    LoadTexture("bmp/choco1.bmp");
     //wood 22
-    LoadTexture("C:\\Users\\User\\Desktop\\CGIPL\\supershop\\bmp\\choco2.bmp");
+    LoadTexture("bmp/choco2.bmp");
     //ac 23
-    LoadTexture("C:\\Users\\User\\Desktop\\CGIPL\\supershop\\bmp\\ac.bmp");
+    LoadTexture("bmp/ac.bmp");
     //signs 24
-    LoadTexture("C:\\Users\\User\\Desktop\\CGIPL\\supershop\\bmp\\signs.bmp");
+    LoadTexture("bmp/signs.bmp");
     //ice creAm 25
-    LoadTexture("C:\\Users\\User\\Desktop\\CGIPL\\supershop\\bmp\\ice_cream.bmp");
+    LoadTexture("bmp/ice_cream.bmp");
     //freezer inside 26
-    LoadTexture("C:\\Users\\User\\Desktop\\CGIPL\\supershop\\bmp\\freezer_inside.bmp");
+    LoadTexture("bmp/freezer_inside.bmp");
     //frozen food 27
-    LoadTexture("C:\\Users\\User\\Desktop\\CGIPL\\supershop\\bmp\\frozen_food.bmp");
+    LoadTexture("bmp/frozen_food.bmp");
     //colafreeze 28
-    LoadTexture("C:\\Users\\User\\Desktop\\CGIPL\\CGIPL FINAL\\supershop\\bmp\\cola.bmp");
+    LoadTexture("bmp/cola.bmp");
     //day_sky 29
-    LoadTexture("C:\\Users\\User\\Desktop\\CGIPL\\CGIPL FINAL\\supershop\\bmp\\sky.bmp");
+    LoadTexture("bmp/sky.bmp");
     //night sky 30
-    LoadTexture("C:\\Users\\User\\Desktop\\CGIPL\\CGIPL FINAL\\supershop\\bmp\\nightsky.bmp");
+    LoadTexture("bmp/nightsky.bmp");
 
 
     glShadeModel(GL_SMOOTH);

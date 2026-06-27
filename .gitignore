@@ -1,0 +1,19 @@
+# Build artifacts
+*.o
+*.obj
+build.log
+supershop
+
+# Code::Blocks per-user files
+supershop.layout
+
+# Editor/IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
