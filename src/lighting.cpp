@@ -3,7 +3,6 @@
 
 void light0()
 {
-    GLfloat no_light[] = { 0.0, 0.0, 0.0, 1.0 };
     GLfloat light_ambient[]  = {0.3, 0.3, 0.3, 1.0};
     GLfloat light_diffuse[]  = { 1.0, 1.0, 1.0, 1.0 };
 
@@ -22,7 +21,6 @@ void light0()
 
 void light1()
 {
-    GLfloat no_light[] = { 0.0, 0.0, 0.0, 1.0 };
     GLfloat light_ambient[]  = {0.3, 0.3, 0.3, 1.0};
     GLfloat light_diffuse[]  = { 1.0, 1.0, 1.0, 1.0 };
 
@@ -44,7 +42,6 @@ void light1()
 void light2()
 {
     // Directional light pointing in the negative z-direction
-    GLfloat no_light[] = { 0.0, 0.0, 0.0, 1.0 };
     GLfloat light_ambient[] = { 0.3, 0.3, 0.3, 1.0 };
     GLfloat light_diffuse[] = { 1.0, 1.0, 1.0, 1.0 };
     GLfloat light_specular[] = { 1.0, 1.0, 1.0, 1.0 };
