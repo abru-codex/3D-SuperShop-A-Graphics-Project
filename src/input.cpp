@@ -54,8 +54,15 @@ void myKeyboardFunc( unsigned char key, int x, int y )
     case '9':
         night_mode = !night_mode;
         sky_texture = night_mode ? 30 : 29;
+        // glLight*(GL_POSITION) bakes current MODELVIEW into the
+        // position. Reset to identity so re-applied lights land in
+        // world space (matches startup), otherwise re-toggle drifts.
+        glMatrixMode(GL_MODELVIEW);
+        glPushMatrix();
+        glLoadIdentity();
         light0();
         light2();
+        glPopMatrix();
         break;
 
     case '8':
