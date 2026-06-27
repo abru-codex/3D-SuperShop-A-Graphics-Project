@@ -66,6 +66,7 @@ int main (int argc, char **argv)
 
     glutDisplayFunc(display);
     glutKeyboardFunc(myKeyboardFunc);
+    glutSpecialFunc(mySpecialFunc);
     glutIdleFunc(animate);
 
     glutMainLoop();
