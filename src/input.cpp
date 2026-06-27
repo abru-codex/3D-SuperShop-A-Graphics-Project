@@ -52,8 +52,10 @@ void myKeyboardFunc( unsigned char key, int x, int y )
         eyeX=40, eyeY=40, eyeZ=40, refX = 0, refY=30,refZ=0; //2nd floor view
         break;
     case '9':
-        if(sky_texture==29) sky_texture=30;
-        else sky_texture=29;
+        night_mode = !night_mode;
+        sky_texture = night_mode ? 30 : 29;
+        light0();
+        light2();
         break;
 
     case '8':
