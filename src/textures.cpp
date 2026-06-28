@@ -1,6 +1,5 @@
 #include "textures.h"
-#include <GL/gl.h>
-#include <GL/glu.h>
+#include "gl_compat.h"
 #include "BmpLoader.h"
 
 unsigned int ID;

@@ -1,5 +1,5 @@
 #include "parking.h"
-#include <GL/gl.h>
+#include "gl_compat.h"
 #include "geometry.h"
 
 // Unit car: ~6 long (X) x 2 tall (Y) x 2.5 wide (Z), sits on y=0

@@ -1,5 +1,5 @@
 #include "animation.h"
-#include <GL/glut.h>
+#include "gl_compat.h"
 
 double door_anglex=0;
 double elevator_door=0, lift_y=0;

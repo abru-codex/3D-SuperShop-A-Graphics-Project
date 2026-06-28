@@ -1,5 +1,5 @@
 #include "input.h"
-#include <GL/glut.h>
+#include "gl_compat.h"
 #include <cstdlib>
 #include <cmath>
 #include "camera.h"

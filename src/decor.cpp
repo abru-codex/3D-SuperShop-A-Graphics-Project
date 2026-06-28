@@ -1,5 +1,5 @@
 #include "decor.h"
-#include <GL/gl.h>
+#include "gl_compat.h"
 #include "geometry.h"
 #include "animation.h"
 #include "products.h"

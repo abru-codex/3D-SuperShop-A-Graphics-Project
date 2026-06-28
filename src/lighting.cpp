@@ -1,5 +1,5 @@
 #include "lighting.h"
-#include <GL/gl.h>
+#include "gl_compat.h"
 
 bool night_mode = false;
 

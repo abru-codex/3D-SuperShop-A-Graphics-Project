@@ -1,6 +1,5 @@
 #include "shelving.h"
-#include <GL/gl.h>
-#include <GL/glut.h>
+#include "gl_compat.h"
 #include "geometry.h"
 
 void product(){

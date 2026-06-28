@@ -1,5 +1,5 @@
 #include "products.h"
-#include <GL/gl.h>
+#include "gl_compat.h"
 #include "geometry.h"
 
 void chocolate_box(){

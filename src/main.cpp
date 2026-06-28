@@ -1,6 +1,4 @@
-#include <GL/gl.h>
-#include <GL/glu.h>
-#include <GL/glut.h>
+#include "gl_compat.h"
 #include "BmpLoader.h"
 #include "geometry.h"
 #include "lighting.h"

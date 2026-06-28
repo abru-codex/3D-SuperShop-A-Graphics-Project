@@ -1,7 +1,5 @@
 #include "scene.h"
-#include <GL/gl.h>
-#include <GL/glu.h>
-#include <GL/glut.h>
+#include "gl_compat.h"
 #include "camera.h"
 #include "building.h"
 #include "shelving.h"

@@ -1,5 +1,5 @@
 #include "freezers.h"
-#include <GL/gl.h>
+#include "gl_compat.h"
 #include "geometry.h"
 
 void icefreezer(){

@@ -1,5 +1,5 @@
 #include "building.h"
-#include <GL/gl.h>
+#include "gl_compat.h"
 #include "geometry.h"
 #include "decor.h"
 

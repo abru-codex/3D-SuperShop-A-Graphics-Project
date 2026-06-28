@@ -1,6 +1,5 @@
 #include "environment.h"
-#include <GL/gl.h>
-#include <GL/glut.h>
+#include "gl_compat.h"
 #include <cmath>
 #include "geometry.h"
 #include "animation.h"

@@ -1,6 +1,5 @@
 #include "geometry.h"
-#include <GL/glu.h>
-#include <GL/glut.h>
+#include "gl_compat.h"
 
 static GLfloat v_cube[8][3] =
 {

@@ -1,7 +1,7 @@
 #ifndef ANIMATION_H
 #define ANIMATION_H
 
-#include <GL/gl.h>
+#include "gl_compat.h"
 
 extern double door_anglex;
 extern double elevator_door, lift_y;
