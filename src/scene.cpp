@@ -8,6 +8,33 @@
 #include "freezers.h"
 #include "environment.h"
 #include "parking.h"
+#include "animation.h"
+#include "people.h"
+
+static float roadWrap(float x)
+{
+    const float start = -85.0f;
+    const float end = 230.0f;
+    const float length = end - start;
+
+    while (x > end) {
+        x -= length;
+    }
+    while (x < start) {
+        x += length;
+    }
+    return x;
+}
+
+static void roadCar(float x, float z, float angle, float r, float g, float b)
+{
+    glPushMatrix();
+    glTranslatef(x, 0.12f, z);
+    glRotatef(angle, 0, 1, 0);
+    glScalef(1.55f, 1.55f, 1.55f);
+    car(r, g, b);
+    glPopMatrix();
+}
 
 void display1st(){
 
@@ -20,6 +47,10 @@ void display1st(){
 
     glPushMatrix();
     place_shelves();
+    glPopMatrix();
+
+    glPushMatrix();
+    shoppers();
     glPopMatrix();
 
 
@@ -39,6 +70,10 @@ void display1st(){
     glRotatef(-90, 0, 1, 0);
     glScalef(0.5,1,1);
     cash_counter();
+    glPopMatrix();
+
+    glPushMatrix();
+    billCounterPeople();
     glPopMatrix();
 
 
@@ -80,11 +115,17 @@ void display1st(){
     petrol_pump();
     glPopMatrix();
 
-    // car parking — west of petrol pumps, north of building
+    // car parking — inside front-left paved area with driveway to road
     glPushMatrix();
-    glTranslatef(-90, 0, 115);
+    glTranslatef(-42, 0, 115);
     parking_lot();
     glPopMatrix();
+
+    // moving cars on the front road
+    roadCar(roadWrap(static_cast<float>(road_car_x)), 163.0f, 0.0f, 0.72f, 0.72f, 0.68f);
+    roadCar(roadWrap(static_cast<float>(road_car_x) - 120.0f), 163.0f, 0.0f, 0.12f, 0.30f, 0.78f);
+    roadCar(roadWrap(230.0f - static_cast<float>(road_car_x) + 40.0f), 174.0f, 180.0f, 0.78f, 0.08f, 0.08f);
+    roadCar(roadWrap(230.0f - static_cast<float>(road_car_x) - 95.0f), 174.0f, 180.0f, 0.08f, 0.55f, 0.25f);
 
     glPushMatrix();
     ac();

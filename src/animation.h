@@ -5,6 +5,7 @@
 
 extern double door_anglex;
 extern double elevator_door, lift_y;
+extern double road_car_x;
 
 extern bool doorOpen, doorClose;
 extern GLboolean liftUp, liftDown;

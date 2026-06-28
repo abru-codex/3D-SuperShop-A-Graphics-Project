@@ -3,6 +3,7 @@
 
 double door_anglex=0;
 double elevator_door=0, lift_y=0;
+double road_car_x=-85;
 
 bool doorOpen=false, doorClose=true;
 GLboolean liftUp = false, liftDown = true;
@@ -25,6 +26,11 @@ void animate()
     if(liftDown){
         lift_y-=0.2;
         lift_y=(lift_y<=0?0:lift_y);
+    }
+
+    road_car_x += 0.35;
+    if (road_car_x > 230) {
+        road_car_x = -85;
     }
 
     glutPostRedisplay();
